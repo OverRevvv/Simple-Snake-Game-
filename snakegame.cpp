@@ -123,8 +123,7 @@ void Logic()
 {
     // Creating all the logics that are necessary for the game to run
 
-    // This switch statement is responsible for movement of the snakehead
-
+    //These variables are used for construction of Tail 
     int prevX = tailX[0],
         prevY = tailY[0],
         prev2X, prev2Y;
@@ -132,6 +131,7 @@ void Logic()
     tailX[0] = x;
     tailY[0] = y;
 
+    //This loop is reponsible for making tail elements follow Snakhead 
     for (int i = 1; i < nTail; i++)
     {
         prev2X = tailX[i];
@@ -142,6 +142,7 @@ void Logic()
         prevY = prev2Y;
     }
 
+    // This switch statement is responsible for movement of the snakehead
     // Every is just incermenting or decrementing the value of X and y for the snake to move
     switch (dir)
     {
