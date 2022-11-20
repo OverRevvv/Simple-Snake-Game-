@@ -165,18 +165,18 @@ void Logic()
 
     // This conditions are responsible for exit the game if tried to leave map area
 
-    // if (x > width || x < 0 || y > height || y < 0)
-    //     gameOver = true;
+    if (x > width || x < 0 || y > height || y < 0)
+        gameOver = true;
 
     // Uncomment this portion to cheat
-    if (x > width)
-        x = 0;
-    else if (x < 0)
-        x = width - 1;
-    if (y > height)
-        y = 0;
-    else if (y < 0)
-        y = height - 1;
+    // if (x > width)
+    //     x = 0;
+    // else if (x < 0)
+    //     x = width - 1;
+    // if (y > height)
+    //     y = 0;
+    // else if (y < 0)
+    //     y = height - 1;
     // End of the Cheat
 
     // This Loop is reponsible for Game Over When Snake touch it's tail
